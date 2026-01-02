@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Delicious Bites</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Delicious Bites</h1>
+      <nav class="main-nav" aria-label="Main">
+        <a href="index.html" class="nav-link">Menu</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section style="padding:2rem 0; max-width:700px;">
+      <h2>Contact & Reservations</h2>
+      <p class="lead">Have a question, a reservation request, or want to place a catering order? Send us a message and we'll get back within 24 hours.</p>
+
+      <form action="#" method="post" style="margin-top:1rem;display:grid;gap:0.75rem;">
+        <label>
+          <span style="display:block;margin-bottom:0.25rem;font-weight:600">Name</span>
+          <input type="text" name="name" placeholder="Your name" required style="padding:0.6rem;border-radius:8px;border:1px solid #ddd;width:100%">
+        </label>
+        <label>
+          <span style="display:block;margin-bottom:0.25rem;font-weight:600">Email</span>
+          <input type="email" name="email" placeholder="you@example.com" required style="padding:0.6rem;border-radius:8px;border:1px solid #ddd;width:100%">
+        </label>
+        <label>
+          <span style="display:block;margin-bottom:0.25rem;font-weight:600">Message</span>
+          <textarea name="message" rows="6" placeholder="How can we help?" style="padding:0.6rem;border-radius:8px;border:1px solid #ddd;width:100%"></textarea>
+        </label>
+        <div style="display:flex;gap:0.5rem">
+          <button class="btn" type="submit">Send Message</button>
+          <a class="muted" href="index.html">Back to Menu</a>
+        </div>
+      </form>
+
+      <hr style="margin:1.25rem 0;border:none;border-top:1px solid #eee">
+      <p style="color:var(--muted)">Call us: <strong>(555) 123-4567</strong> • Open daily 11:30–22:00</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Delicious Bites</p>
+    </div>
+  </footer>
+</body>
+</html>

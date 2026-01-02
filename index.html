@@ -1,63 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delicious Bites Menu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicious Bites — Menu</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Delicious Bites</h1>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <h1>Delicious Bites Menu</h1>
+  <main class="container" id="menu">
+    <section class="hero">
+      <img class="hero-img" src="img/hero.svg" alt="Delicious food illustration">
+      <h2 class="tagline">Seasonal flavors & handcrafted dishes</h2>
+      <p class="lead">From small bites to indulgent desserts — explore our curated menu.</p>
+    </section>
 
-    <h2>Appetizers</h2>
-    <ul>
-        <li>
-            <strong>Caprese Salad</strong>
-            <p>Fresh tomatoes, mozzarella, and basil drizzled with balsamic glaze.</p>
-        </li>
-        <li>
-            <strong>Garlic Bread</strong>
-            <p>Toasted bread topped with garlic butter and herbs.</p>
-        </li>
-        <li>
-            <strong>Stuffed Mushrooms</strong>
-            <p>Mushrooms filled with creamy cheese and baked until golden.</p>
-        </li>
-    </ul>
+    <section class="menu-section" aria-labelledby="appetizers-title">
+      <h2 id="appetizers-title" class="section-title">Appetizers</h2>
+      <div class="grid">
+        <article class="dish">
+          <img class="dish-img" src="img/appetizer.svg" alt="Caprese Salad">
+          <h3 class="dish-name">Caprese Salad</h3>
+          <p class="dish-desc">Fresh heirloom tomatoes, buffalo mozzarella, and basil finished with a house balsamic reduction.</p>
+          <span class="price">$8</span>
+        </article>
 
-    <h2>Main Courses</h2>
-    <ul>
-        <li>
-            <strong>Grilled Salmon</strong>
-            <p>Salmon fillet seasoned and grilled to perfection, served with lemon butter sauce.</p>
-        </li>
-        <li>
-            <strong>Classic Beef Burger</strong>
-            <p>Juicy beef patty with lettuce, tomato, cheese, and house sauce.</p>
-        </li>
-        <li>
-            <strong>Vegetable Pasta</strong>
-            <p>Pasta tossed with seasonal vegetables in a light tomato sauce.</p>
-        </li>
-    </ul>
+        <article class="dish">
+          <img class="dish-img" src="img/appetizer.svg" alt="Garlic Herb Flatbread">
+          <h3 class="dish-name">Garlic Herb Flatbread</h3>
+          <p class="dish-desc">Warm flatbread brushed with garlic-herb butter and sea salt — perfect for sharing.</p>
+          <span class="price">$6</span>
+        </article>
 
-    <h2>Desserts</h2>
-    <ul>
-        <li>
-            <strong>Chocolate Fondue</strong>
-            <p>Assorted fruits and marshmallows served with rich chocolate fondue.</p>
-        </li>
-        <li>
-            <strong>Vanilla Ice Cream</strong>
-            <p>Classic vanilla ice cream topped with chocolate syrup.</p>
-        </li>
-        <li>
-            <strong>Apple Pie</strong>
-            <p>Warm apple pie with a flaky crust and cinnamon flavor.</p>
-        </li>
-    </ul>
+        <article class="dish">
+          <img class="dish-img" src="img/appetizer.svg" alt="Wild Mushroom Arancini">
+          <h3 class="dish-name">Wild Mushroom Arancini</h3>
+          <p class="dish-desc">Crispy risotto balls stuffed with wild mushrooms and creamy fontina.</p>
+          <span class="price">$9</span>
+        </article>
+      </div>
+    </section>
 
-    <p><a href="contact.html">Contact us for reservations</a></p>
+    <section class="menu-section" aria-labelledby="mains-title">
+      <h2 id="mains-title" class="section-title">Main Courses</h2>
+      <div class="grid">
+        <article class="dish">
+          <img class="dish-img" src="img/main-course.svg" alt="Grilled Salmon">
+          <h3 class="dish-name">Grilled Salmon</h3>
+          <p class="dish-desc">Pan-seared salmon with lemon-butter emulsion, served with roasted baby potatoes.</p>
+          <span class="price">$18</span>
+        </article>
 
+        <article class="dish">
+          <img class="dish-img" src="img/main-course.svg" alt="Smoky BBQ Brisket">
+          <h3 class="dish-name">Smoky BBQ Brisket</h3>
+          <p class="dish-desc">Slow-smoked brisket glazed with house BBQ sauce, served with pickled slaw.</p>
+          <span class="price">$20</span>
+        </article>
+
+        <article class="dish">
+          <img class="dish-img" src="img/main-course.svg" alt="Roasted Vegetable Pappardelle">
+          <h3 class="dish-name">Roasted Vegetable Pappardelle</h3>
+          <p class="dish-desc">Wide ribbons of pasta tossed with roasted seasonal vegetables and parmesan cream.</p>
+          <span class="price">$15</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-section" aria-labelledby="desserts-title">
+      <h2 id="desserts-title" class="section-title">Desserts</h2>
+      <div class="grid">
+        <article class="dish">
+          <img class="dish-img" src="img/dessert.svg" alt="Chocolate Fondue">
+          <h3 class="dish-name">Chocolate Fondue</h3>
+          <p class="dish-desc">Velvety dark chocolate with seasonal fruit, brioche and marshmallows for dipping.</p>
+          <span class="price">$10</span>
+        </article>
+
+        <article class="dish">
+          <img class="dish-img" src="img/dessert.svg" alt="Salted Caramel Panna Cotta">
+          <h3 class="dish-name">Salted Caramel Panna Cotta</h3>
+          <p class="dish-desc">Silky vanilla panna cotta topped with house-made salted caramel and almond crumble.</p>
+          <span class="price">$9</span>
+        </article>
+
+        <article class="dish">
+          <img class="dish-img" src="img/dessert.svg" alt="Warm Apple Galette">
+          <h3 class="dish-name">Warm Apple Galette</h3>
+          <p class="dish-desc">Rustic galette of cinnamon apples and brown butter, served with vanilla bean ice cream.</p>
+          <span class="price">$8</span>
+        </article>
+      </div>
+    </section>
+
+    <div class="cta-row">
+      <a class="btn" href="contact.html">Reserve a Table</a>
+      <a class="muted" href="#">Download Menu (PDF)</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Delicious Bites — <a href="contact.html">Contact & Reservations</a></p>
+    </div>
+  </footer>
 </body>
 </html>
